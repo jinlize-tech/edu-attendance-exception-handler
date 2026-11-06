@@ -1,0 +1,24 @@
+{
+  "number": 49,
+  "product_id": "JLZ-EDU-SK-039",
+  "chinese_name": "考勤异常处理",
+  "english_name": "Attendance Exception Handler",
+  "repository_name": "edu-attendance-exception-handler",
+  "product_type": "Skill",
+  "category": "04 教务运营中心",
+  "version": "1.0.0",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED",
+  "license": "Apache-2.0",
+  "baseline_tag": "education-product-baseline-v1.0.0",
+  "package_path": "dist/edu-attendance-exception-handler-v1.0.0.zip",
+  "calculator": false,
+  "core_input": "考勤原始记录、排课表、请假审批、异常类型和处理规则",
+  "main_output": "异常清单、原因分类、建议动作、责任归属和待人工确认项",
+  "package_entries": [
+    "edu-attendance-exception-handler/SKILL.md",
+    "edu-attendance-exception-handler/references/DOMAIN_GUIDE.md",
+    "edu-attendance-exception-handler/references/EXAMPLES.md",
+    "edu-attendance-exception-handler/templates/OUTPUT_TEMPLATE.md"
+  ]
+}

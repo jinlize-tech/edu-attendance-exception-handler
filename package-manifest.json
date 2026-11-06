@@ -1,0 +1,18 @@
+{
+  "product_id": "JLZ-EDU-SK-039",
+  "repository_name": "edu-attendance-exception-handler",
+  "product_type": "Skill",
+  "version": "1.0.0",
+  "package_path": "dist/edu-attendance-exception-handler-v1.0.0.zip",
+  "sha256": "838EA4C504158E21F616663E5512860DAF3CF19D6D07A516246302DD9EA06ECB",
+  "bytes": 4830,
+  "entries": [
+    "edu-attendance-exception-handler/SKILL.md",
+    "edu-attendance-exception-handler/references/DOMAIN_GUIDE.md",
+    "edu-attendance-exception-handler/references/EXAMPLES.md",
+    "edu-attendance-exception-handler/templates/OUTPUT_TEMPLATE.md"
+  ],
+  "built_at": "2026-11-06T22:19:46.6084286+08:00",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED"
+}
