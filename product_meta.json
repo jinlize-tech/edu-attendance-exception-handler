@@ -6,19 +6,37 @@
   "repository_name": "edu-attendance-exception-handler",
   "product_type": "Skill",
   "category": "04 教务运营中心",
-  "version": "1.0.0",
-  "status": "PACKAGE_READY",
-  "workbuddy_validation": "NOT_VERIFIED",
+  "version": "1.0.1",
+  "previous_version": "1.0.0",
+  "g5_status": "G5_STRENGTHENED",
+  "status": "G9_PRE_RELEASE_ACCEPTED",
+  "package_state": "GITHUB_PACKAGE_PRE_RELEASE_READY",
+  "runtime_status": "NOT_RUNTIME_VERIFIED",
+  "workbuddy_validation": "WORKBUDDY_VALIDATION_NOT_IN_SCOPE",
   "license": "Apache-2.0",
   "baseline_tag": "education-product-baseline-v1.0.0",
-  "package_path": "dist/edu-attendance-exception-handler-v1.0.0.zip",
+  "baseline_commit": "dd22ab69cc5385c03735aeede681f4894b6a69f0",
+  "package_path": "dist/edu-attendance-exception-handler-v1.0.1.zip",
+  "previous_package_path": "dist/edu-attendance-exception-handler-v1.0.0.zip",
+  "previous_package_sha256": "838EA4C504158E21F616663E5512860DAF3CF19D6D07A516246302DD9EA06ECB",
   "calculator": false,
   "core_input": "考勤原始记录、排课表、请假审批、异常类型和处理规则",
   "main_output": "异常清单、原因分类、建议动作、责任归属和待人工确认项",
+  "main_output_fields": [
+    "异常清单",
+    "原因分类",
+    "建议动作",
+    "责任归属和待人工确认项"
+  ],
   "package_entries": [
     "edu-attendance-exception-handler/SKILL.md",
     "edu-attendance-exception-handler/references/DOMAIN_GUIDE.md",
     "edu-attendance-exception-handler/references/EXAMPLES.md",
-    "edu-attendance-exception-handler/templates/OUTPUT_TEMPLATE.md"
+    "edu-attendance-exception-handler/templates/OUTPUT_TEMPLATE.md",
+    "edu-attendance-exception-handler/README.md",
+    "edu-attendance-exception-handler/USAGE.md",
+    "edu-attendance-exception-handler/LICENSE",
+    "edu-attendance-exception-handler/THIRD_PARTY_NOTICES.md",
+    "edu-attendance-exception-handler/scripts/validate_input.js"
   ]
 }
