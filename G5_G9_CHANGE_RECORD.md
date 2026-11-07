@@ -1,35 +1,43 @@
-# G5/G9 产品修改记录
+# G5/G9-R2 产品修改记录
 
-- 产品编号：$(@{number=49; product_id=JLZ-EDU-SK-039; chinese_name=考勤异常处理; english_name=Attendance Exception Handler; repository_name=edu-attendance-exception-handler; repository_url=https://github.com/jinlize-tech/edu-attendance-exception-handler; product_type=Skill; category_code=04; category=04 教务运营中心; description=考勤异常识别和处理建议。; target_users=System.Object[]; core_input=考勤原始记录、排课表、请假审批、异常类型和处理规则; main_output=异常清单、原因分类、建议动作、责任归属和待人工确认项; product_risk=把系统异常误判为人员问题; dedup_label=存在部分功能交叉; dedup_note=与智能排课区分：排课完成后处理考勤异常，不重排完整课表。; development_status=Planned / 待研发; license=Apache-2.0; spec_version=1.0.0; workbuddy_status=PLANNED_FOR_WORKBUDDY}.product_id)
-- 产品名称：考勤异常处理
-- 基线：EDUCATION_BASELINE_V1.0.0
-- 基线提交：$BaselineCommit
-- 原版本：1.0.0
-- 新版本：1.0.1
+- 产品编号：`JLZ-EDU-SK-039`
+- 中文名称：`考勤异常处理`
+- 英文名称：`Attendance Exception Handler`
+- 产品类型：`Skill`
+- GitHub仓库：`https://github.com/jinlize-tech/edu-attendance-exception-handler`
+- 1.0.0冻结基线：`EDUCATION_BASELINE_V1.0.0`
+- 1.0.0基线Commit：`dd22ab69cc5385c03735aeede681f4894b6a69f0`
+- 1.0.1原版本Commit：`db31d6a27d8bf6c05faa0ec69ac66c5e67fbf072`
+- 1.0.2实施Commit：`PENDING_IMPLEMENTATION_COMMIT`
+- 1.0.2最终证据Commit：`由 product-v1.0.2 Tag 指向的最新证据提交`
+- 新版本：`1.0.2`
 
-## 本次修改
+## 1.0.2 变更内容
 
-1. 强化产品专属执行流程、输入核对和输出验收规则。
-2. 新增 scripts/validate_input.js，实际检查必填字段、冲突、未确认数据和敏感信息。
-3. 新增正常、缺失、冲突、敏感信息和非法JSON场景输入。
-4. 测试升级为 T1–T7 分层并保存逐项检查结果。
-5. 安装包加入 Apache-2.0 LICENSE 和 THIRD_PARTY_NOTICES.md。
-6. 安装包升级为 1.0.1，加入许可证、第三方声明和输入校验脚本，保留 1.0.0 ZIP。
-7. 按本产品冻结规格补充专属处理规则、输入到成果的核对矩阵和去重边界。
+1. 本轮无业务逻辑功能变更；属于元数据、证据、基线身份补充和发布版本维护。
+4. 补充 BASELINE_VERSION.md 的产品身份信息，不修改历史冻结内容和基线 Tag。
+5. 重新生成 1.0.2 安装包、package-manifest、测试证据和 SHA-256。
 
-## 产品专属增强
+## 实际修改文件
 
-- 核心任务：考勤异常识别和处理建议。
-- 主要风险：把系统异常误判为人员问题
-- 去重边界：与智能排课区分：排课完成后处理考勤异常，不重排完整课表。
+- `VERIFICATION_PENDING`
 
-- 先提取班级、教师、教室、时间、学生约束和硬性规则，再生成排程草案。
-- 硬冲突不得被软约束覆盖；无法消解时列出冲突、影响和升级责任人。
-- 所有变更保留原状态、目标状态、生效时间和回退方式。
-- 正式课表、考勤和审批结果必须由有权限人员确认后生效。
+## 测试项目与结果
+
+- 总测试状态：`VERIFICATION_PENDING`
+
+| 测试层 | 结果 |
+|---|---|
+| T1-T7 | VERIFICATION_PENDING |
+
+## 安装包
+
+- 路径：`dist/edu-attendance-exception-handler-v1.0.2.zip`
+- SHA-256：`88DF656339C7DB0EC1FD6CF8551E830560B17C354B0A6E2FF43428B1FEE603BD`
 
 ## 运行边界
 
-- 本地模型行为：NOT_RUNTIME_VERIFIED
-- WorkBuddy平台验证：WORKBUDDY_VALIDATION_NOT_IN_SCOPE
+- 模型真实运行：`MODEL_RUNTIME_NOT_VERIFIED`
+- WorkBuddy平台验证：`WORKBUDDY_VALIDATION_NOT_IN_SCOPE`
 - 本轮不执行上传、安装、审核或正式发布。
+
