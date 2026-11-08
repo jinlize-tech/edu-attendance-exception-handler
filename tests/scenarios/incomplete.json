@@ -1,0 +1,11 @@
+{
+  "scenario_name": "incomplete",
+  "business_context": "用户在考勤异常处理任务开始阶段只提供了少量资料。",
+  "inputs": {
+    "考勤原始记录": "标准合成场景｜版本已确认；仅使用用户主动提供的脱敏材料（合成资料）",
+    "排课表": "标准合成场景｜8个班、4名教师、3间教室；周一至周五16:00-20:00（合成约束）"
+  },
+  "data_status": "confirmed",
+  "conflicts": [],
+  "contains_sensitive_data": false
+}
